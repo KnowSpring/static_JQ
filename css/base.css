@@ -1,0 +1,448 @@
+.fr{
+    float:right;
+}
+.fl{
+    float:left;
+}
+.w{
+    width:1190px;
+    margin:auto;
+}
+i{
+    font-family:"icomoon";
+    font-style:normal;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+*{
+    margin:0;
+    padding:0;
+}
+input,button{
+    border:0;
+    padding:0;
+}
+h1,h5,p{
+    margin:0;
+}
+.style-red{
+    color:#f10125 !important;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?axvffw');
+    src:  url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?axvffw') format('truetype'),
+    url('../fonts/icomoon.woff?axvffw') format('woff'),
+    url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #F6F6F6;
+}
+
+
+/*顶部样式start*/
+
+.J_event{
+    background:#000;
+}
+.J_event a{
+    display: block;
+    background:url("../images/top.jpg");
+    width:1190px;
+    height:80px;
+    position:relative;
+}
+.J_event a i{
+    height:20px;
+    width:20px;
+
+    text-align: center;
+    line-height:20px;
+    color:#fff;
+    background: rgba(0,0,0,0.4);
+    position:absolute;
+    top:5px;
+    right:0;
+
+}
+/*顶部样式end*/
+
+
+/*快捷导航栏开始*/
+.shortcut{
+    height:30px;
+    background: #e3e4e5;
+    border: 1px solid #ddd;
+    color: #9D9D9D;
+    font-size: 12px;
+    line-height: 30px;
+}
+.shortcut a{
+    color: #9D9D9D;
+    text-decoration: none;
+
+}
+.shortcut .fl li{
+    margin-left:200px;
+    height:30px;
+    overflow:hidden;
+}
+
+.shortcut .fr li{
+   float:left;
+
+}
+.position{
+    font-size: 14px;
+    color: #f10215;
+
+
+}
+.shortcut a:hover{
+    color: #f10215;
+}
+.spacer{
+    width:1px;
+    height:10px;
+    margin:10px 10px 0;
+    background-color:#ccc;
+
+}
+.dropdown{
+    padding-right:15px;
+    position:relative;
+}
+.dropdown i{
+    font-size:16px;
+    position:absolute;
+    top:-2px;
+    right:-2px;
+
+
+}
+.erweima{
+    height:60px;
+    width:60px;
+    padding:3px;
+    border:1px solid #ccc;
+    position: absolute;
+    top:35px;
+    right:-13px;
+}
+
+/*header 部分start*/
+.inner{
+    height:140px;
+    /*background-color: pink;*/
+    position: relative;
+}
+.logo{
+    height:170px;
+    width:190px;
+    position: absolute;
+    top:-30px;
+    left:0;
+    box-shadow:0 -12px 10px rgba(0,0,0,0.2);
+}
+.logo h1{
+    margin:0;
+
+}
+.logo a{
+    display:block;
+    height:170px;
+    width:190px;
+    background: url("../images/logo.jpg");
+    text-indent:-9999em;
+    overflow: hidden;
+
+   
+
+}
+.search{
+    height:35px;
+    width:550px;
+    position: absolute;
+    top:25px;
+    left:320px;
+}
+.search input{
+    width:493px;
+    height:33px;
+    border:1px solid #F10215;
+    outline:none;
+    float:left;
+    padding-left:5px;
+    color: #989898;
+}
+.search button{
+    width:50px;
+    height:35px;
+    float:left;
+    background-color: #F10215;
+    cursor:pointer;
+    outline:none;
+}
+.search i{
+    color:#fff;
+    font-size:23px;
+}
+.search em{
+    width:19px;
+    height:15px;
+    background: url("../images/sprite-search.png") no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 65px;
+    cursor:pointer;
+
+}
+.search em:hover{
+    background-position:-30px 0;
+}
+
+ .hotwords{
+    width:550px;
+    position:absolute;
+    top:60px;
+    right:320px;
+     padding:0;
+}
+ .hotwords a{
+     font-size: 12px;
+     color: #9E9B99;
+ }
+.hotwords a:hover{
+    color:#f10215;
+}
+.mycar{
+    width:160px;
+    height:33px;
+    position: absolute;
+    top:25px;
+    right:100px;
+    line-height:33px;
+    text-align: center;
+    color:#f10215;
+    font-size:12px;
+    border:1px solid #ccc;
+}
+.mycar s{
+    font-family:"icomoon";
+    margin-right:3px;
+    
+}
+.mycar a{
+    color:#f10215;
+}
+.quantity{
+    height:10px;
+    position: absolute;
+    line-height:10px;
+    top:3px;
+    left:122px;
+    color:#fff;
+    background-color:#f10215;
+    border-radius:7px;
+    padding:3px;
+    font-size:12px;
+
+    
+}
+.computer{
+    position:absolute;
+    bottom:10px;
+    right:0;
+    height:40px;
+    width:190px;
+}
+.navitems{
+    position: absolute;
+    bottom:0;
+    left:230px;
+
+}
+.navitems ul{
+    float:left;
+
+}
+.navitems li{
+    float:left;
+    margin-left:30px;
+}
+.navitems a{
+    font-size:16px;
+    font-weight:700;
+    color:#555A5F;
+    height:40px;
+    line-height: 40px;
+    display: block;
+
+}
+.navitems a:hover{
+    color:#f10215;
+}
+.navitems .spacer{
+    float:left;
+    margin-top:15px;
+    margin-left: 20px;
+    margin-right:-10px;/*让右边的走10px*/
+}
+/*header 部分end*/
+
+/*footer 部分start*/
+.footer{
+    height:540px;
+    color:#EAEAEA;
+
+}
+.footer-server{
+    border-bottom: 1px solid #dedede;
+    padding:30px 0;
+}
+.footer-server-inner li{
+    float:left;
+    width:297px;
+    height:42px;
+}
+.server-unit{
+    width:225px;
+    height:42px;
+    margin:0 auto;
+    position:relative;
+}
+.server-unit h5{
+    position: absolute;
+    top:0;
+    left:0;
+    height:42px;
+    width:45px;
+    float:left;
+    background: url("../images/ico_service.png") no-repeat ;
+    text-indent:-999px;
+    overflow:hidden;
+}
+.server-unit p{
+    float:left;
+    margin-left:45px;
+    font-size:18px;
+    font-weight:700;
+    color:#000;
+    line-height:42px;
+}
+.server-unit .kuai{
+    background-position:0 -42px;
+}
+.server-unit .hao{
+    background-position:0 -86px;
+}
+
+.server-unit .sheng{
+    background-position:0 -130px;
+}
+.help{
+    margin-top:20px;
+    height:180px;
+}
+.help dl{
+    width:195px;/*宽度剩余法*/
+    float:left;
+}
+.help dt{
+    font-size:14px;
+    color:#666;
+    font-weight:700;
+    height:30px;/*高度剩余法*/
+
+}
+.help dd{
+    height:22px;
+}
+.help dd a{
+    font-size:12px;
+    color:#727272;
+}
+.help dd a:hover{
+    color: #f10215;
+}
+.cover {
+    float:right;
+    background: url("../images/ico_footer.png") no-repeat ;
+    width:207px;
+    height:150px;
+
+}
+.cover dt{
+    text-align: center;
+
+}
+.cover .info{
+    width:175px;
+    line-height:18px;
+    color:#727272;
+    font-size:12px;
+    height:50px;
+    margin-left:10px;
+    margin-top:5px;
+
+}
+.cover .more{
+    text-align: right;
+}
+.copyright{
+    border-top:1px solid #ccc;
+   padding:10px 0;
+
+}
+.links{
+    text-align:center;
+}
+.links a{
+    font-size:12px;
+    color:#727272;
+}
+.links span{
+    margin:0 6px;
+    color: #D4CDCD;
+    font-size:12px;
+}
+.c-info{
+    margin-top:10px;
+}
+.c-info p{
+    text-align: center;
+    color:#9E9E9B;
+    font-size:12px;
+    line-height:20px;
+}
+.tupian{
+    text-align: center;
+}
+.tupian a{
+    display: inline-block;
+    width:103px;
+    height:32px;
+    background: url("../images/ico_footer.png") no-repeat 0 -151px ;
+}
+.tupian .xinren{
+    background-position:-104px -151px;
+}
+
+/*footer 部分end*/
